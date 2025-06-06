@@ -1,0 +1,40 @@
+Proposed directory structure
+
+oscilloscope_analysis/
+│
+├── oscilloscope_analysis/
+│   ├── __init__.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── reader.py
+│   │   ├── signal.py
+│   │   └── window.py
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── statistics.py
+│   │   └── optical_depth.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── helpers.py
+│   │   └── plotting.py
+│   └── gui/
+│       ├── __init__.py
+│       ├── app.py
+│       ├── components.py
+│       └── callbacks.py
+│
+├── tests/
+│   ├── test_reader.py
+│   ├── test_signal.py
+│   ├── test_statistics.py
+│   ├── test_optical_depth.py
+│
+├── examples/
+│   └── compute_optical_depth.py
+│
+├── setup.py
+├── pyproject.toml
+├── README.md
+├── LICENSE
+├── .gitignore
+└── requirements.txt
