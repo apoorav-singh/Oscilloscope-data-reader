@@ -5,7 +5,7 @@ This repository is collection python scripts that is used to analyze the data sa
 ⸻
 
 
-# How to Run `process_photodiode.py`
+# How to Run `optical_depth_calc.py`
 
 This Python script processes oscilloscope data from a cold atom experiment. It identifies timing markers from a ramp signal, extracts photodiode data with and without atoms, and fits the transmission profile using Beer–Lambert's Law.
 
