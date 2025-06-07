@@ -34,7 +34,7 @@ Each dataset is identified by a **file number** (e.g., `11` corresponds to `F1_R
 
 ```bash
 python process_photodiode.py --year 2025 --month 06 --date 07 --file 11
-
+```
 
 ⸻
 
@@ -63,7 +63,7 @@ T = (WithAtoms - Background) / (WithoutAtoms - Background)
 
 ⸻
 
-✅ Requirements
+Requirements
 
 Make sure the following Python packages are installed:
 
