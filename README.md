@@ -1,7 +1,6 @@
 # Oscilloscope-data-reader
 This repository is collection python scripts that is used to analyze the data saved from the oscilloscope on the computer. Currently, it is designed to calculate optical depth of the cold atomic cloud using reading data of photodiode. Idea is to expand and to use it as a general data analysis script bundle. 
 
-Certainly! Here’s the entire explanation formatted in Markdown:
 
 ⸻
 
@@ -17,9 +16,9 @@ This Python script processes oscilloscope data from a cold atom experiment. It i
 The script expects data to be organized in the following structure:
 
 data/
-└── /
-└── /
-└── /
+└── /YEAR
+└── /MONTH
+└── /DAY
 ├── F1_RL_00011.txt     ← Photodiode data
 └── C2_RL_00011.txt     ← Ramp signal
 
