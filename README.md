@@ -42,9 +42,9 @@ Command-Line Arguments
 
 Flag	Description	Example
 --year	Year of the data folder	2025
---month	Month of the data folder	06
+--month	Month of the data folder 06
 --date	Day of the data folder	07
---file	File number to process (e.g., 11 → 00011)	11
+--file	File number to process (e.g., 11 → 00011) 11
 
 
 ⸻
@@ -53,7 +53,9 @@ What the Script Does
 	•	Loads the ramp data and finds timing markers (pulses).
 	•	Loads photodiode data and extracts signal during the pulses.
 	•	Computes transmission using:
-T = (WithAtoms - Background) / (WithoutAtoms - Background)
+ 
+```T = (WithAtoms - Background) / (WithoutAtoms - Background)```
+
 	•	Fits the result to a model:
 
 	•	Displays:
@@ -67,29 +69,29 @@ Requirements
 
 Make sure the following Python packages are installed:
 
-pip install numpy pandas matplotlib scipy
+```pip install numpy pandas matplotlib scipy```
 
 Also ensure AOM_calibration.py is in the same directory or importable, and contains the following variables:
-
+```
 LockingFrequencyProbe = ...
 SPassProbe = ...
-
+```
 
 ⸻
 
 Example
 
-python process_photodiode.py --year 2025 --month 06 --date 07 --file 11
+```python process_photodiode.py --year 2025 --month 06 --date 07 --file 11```
 
 This will process:
-
+```
 data/2025/06/07/F1_RL_00011.txt
 data/2025/06/07/C2_RL_00011.txt
-
+```
 
 ⸻
 
 Optional Enhancements
 	•	Save results (fit parameters, processed arrays) to CSV
-	•	Add a --no-plot flag for headless use
+	•	Add a ```--no-plot``` flag for headless use
 	•	Batch processing over multiple files
